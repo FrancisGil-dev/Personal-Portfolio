@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Tailwind Css-->
+    <script src="https://cdn.tailwindcss.com"></script> 
+    <!--VanilaJs-->
+    <script src="script.js"></script>
+</head>
+<body>
+    <section class="h-screen">
+        <nav class="h-20 max-w-5xl mx-auto my-0 flex justify-between py-10">
+            <a class="text-3xl text-[#3a86ff]" href="#">DevBros</span></a>
+            <ul class="flex gap-10">
+                <li class="cursor-pointer hover:text-[#3a86ff] transition-all">Home</li>
+                <li class="cursor-pointer hover:text-[#3a86ff] transition-all">Skills</li>
+                <li class="cursor-pointer hover:text-[#3a86ff] transition-all">Portfolio</li>
+                <li class="cursor-pointer hover:text-[#3a86ff] transition-all">Contacts</li>
+                <li class="cursor-pointer hover:text-[#3a86ff] transition-all"><i class="bi bi-moon"></i></li>
+            </ul>
+        </nav>
+        <main class="h-screen flex justify-between items-center max-w-7xl mx-auto my-0 gap-20">
+            <!--Socmeds-->
+            <div class="flex flex-col gap-6">
+                <i class="bi bi-linkedin" class="cursor-pointer"></i>
+                <i class="bi bi-github" class="cursor-pointer""></i>
+                <i class="bi bi-instagram"></i>
+            </div>
+            
+            <!--name-->
+            <div>
+                <h1 class="text-5xl">Hi, We're <span>Devbros</span></h1>
+                <br>
+                <h3 class="text-2xl">Front-End Developer</h3>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi blanditiis molestiae laborum ut minima, dolorem sequi velit illo dolores voluptatem.</p>
+            </div>
+            <!--Image-->
+            <div><img src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/1998567/coding-svg-clipart-xl.png" class="h-[400px] w-[500px]"></div>
+        </main>
+    </section>
+    <section class="h-[100vh]"></section>
+    <section class="h-[50vh]"></section>
+    <section class="h-[50vh]"></section>
+</body>
+<style>
+    /*Fonts*/
+    @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Montserrat:wght@100;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+    /*Bootstrap CDN*/
+    @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
+    /*Font Family */
+    nav>ul>li{font-family: 'Poppins',sans-serif;}
+    nav>a{font-family: 'Julius Sans One',sans-serif;}
+
+</style>
+</html>
