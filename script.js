@@ -9,13 +9,14 @@ const scrollView = () => {
         {sections[sectionIndex].scrollIntoView({behavior: 'smooth'})}
     }
     //addEvent Listener the navs
-    const scrollIcon = document.querySelector('#scroll');
+    
     const navMenu = document.querySelectorAll('ul li');
     navMenu[1].addEventListener('click', () => scrollToSec(1))
     navMenu[2].addEventListener('click', () => scrollToSec(2))
     navMenu[3].addEventListener('click', () => scrollToSec(3))
+       
     //addEvent the scroll
-    scrollIcon.addEventListener('click', () => scrollToSec[1])
+    
 
 }
 window.addEventListener('DOMContentLoaded', scrollView);
@@ -35,5 +36,16 @@ const toggleDark = () => {
 }
 window.addEventListener('DOMContentLoaded',toggleDark);
 
+//Mouse Icon scroll
+const iconScroll = document.querySelector('#scroll').addEventListener('click', (e) => {
+    e.preventDefault();
+
+    const targetId = this.getAttribute('href');
+    const targetSec = document.querySelector(targetId)
+
+    if(targetSec){
+        targetSec.scrollIntoView({behavior: 'smooth'})
+    }
+})
 
 

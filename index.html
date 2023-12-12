@@ -39,24 +39,47 @@
                 <br>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi blanditiis molestiae laborum ut minima, dolorem sequi velit illo dolores voluptatem.</p>
                 <br>
-                <button class="bg-[#3a86ff] p-2 rounded gap-2"><i class="bi bi-send"></i>   Contact Me</button>
+                <button class="bg-[#3a86ff] p-2 rounded gap-2" id="contactMe"><i class="bi bi-send"></i>   Contact Me</button>
               
               
             </div>
             <!--Image-->
             <div>
-                <img src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/1998567/coding-svg-clipart-xl.png" class="h-[400px] w-[500px]">
+                <img src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/1998567/coding-svg-clipart-xl.png" class="h-[400px] w-[500px] mb-24">
                 <!--Scroll Icon-->
                 <div class="gap-4">
-                    <button id="scroll"> <i class="bi bi-mouse text-3xl text-[#3a86ff]"></i> Scroll Here</button>
+                    <a id="scroll" href="#skills" class="scroll-smooth "><i class="bi bi-mouse text-3xl text-[#3a86ff] p-2"></i>Scroll Here</a>
                  </div>
             </div>
            
 
         </main>
     </section>
-    <section class="h-screen">
-
+    <section class="h-screen" id="skills">
+        <!--sub Header-->
+        <div>
+            <h1 class="text-4xl text-center mb-1">Skills</h1>
+            <p class="text-center text-lg">My technical Skills</p>
+        </div>
+        <!--Skills Main-->
+        <main class="flex justify-center items-center h-screen gap-40">
+            <div class="flex  items-center gap-3">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/800px-HTML5_Badge.svg.png" class="h-10">
+                <h1 class="text-lg">HTML</h1>
+            </div>
+            <div class="flex  items-center gap-3">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/2048px-CSS3_logo.svg.png" class="h-10">
+                <h1 class="text-lg">CSS</h1>
+            </div>
+            <div class="flex items-center gap-3">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png" class="h-10">
+                <h1  class="text-lg">JavaScript</h1>
+            </div>
+            <div class="flex items-center gap-3">
+                <img src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" class="h-10">
+                <h1 class="text-lg">ReactJS</h1>
+            </div>              
+        </main>
     </section>
     <section class="h-screen"></section>
     <section class="h-screen"></section>
@@ -71,6 +94,8 @@
     nav>a{font-family: 'Montserrat',sans-serif;font-weight: bold;}
     #name{font-family: 'Poppins',sans-serif;}
     #name>h1{font-family: 'Montserrat',sans-serif;}
+    /*Skills*/
+    #skills main div h1{font-family: 'Poppins', sans-serif;}
 
 </style>
 </html>
